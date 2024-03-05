@@ -1,0 +1,15 @@
+{
+    "datasets": [
+      {
+        "id": "tiiuae/falcon-refinedweb",
+        "description": "Description of dataset 1",
+        "tags": []
+      },
+      {
+        "id": "bigcode/the-stack-v2",
+        "description": "Description of dataset 2",
+        "tags": []
+      }
+    ]
+  }
+  
