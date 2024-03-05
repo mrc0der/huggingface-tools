@@ -1,17 +1,31 @@
 {
-    "models": [
-      {
-        "id": "dranger003/starcoder2-15b-GGUF",
-        "description": "StarCoder2-15B model is a 15B parameter model trained on 600+ programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 4+ trillion tokens.",
-        "files": ["ggml-starcoder2-15b-q4_k.gguf", "ggml-starcoder2-15b-q5_k.gguf"],
-        "tags":[]
-      },
-      {
+  "models": [
+    {
         "id": "TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF",
         "description": "TBD",
         "files": ["mixtral-8x7b-instruct-v0.1.Q2_K.gguf"],
-        "tags":[]
-      }
-    ]
-  }
-  
+        "tags": []
+      },
+    {
+      "id": "google/gemma-7b",
+      "description": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights, pre-trained variants, and instruction-tuned variants.",
+      "files": ["gemma-7b.gguf"],
+      "tags": []
+    },
+    {
+      "id": "dranger003/starcoder2-15b-GGUF",
+      "description": "StarCoder2-15B model is a 15B parameter model trained on 600+ programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 4+ trillion tokens.",
+      "files": [
+        "ggml-starcoder2-15b-q4_k.gguf",
+        "ggml-starcoder2-15b-q5_k.gguf"
+      ],
+      "tags": []
+    },
+    {
+      "id": "google/gemma-7b-it",
+      "description": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights, pre-trained variants, and instruction-tuned variants.",
+      "files": ["gemma-7b-it.gguf"],
+      "tags": []
+    }
+  ]
+}

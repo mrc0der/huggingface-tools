@@ -1,25 +1,26 @@
+"""model_manager.py"""
 import json
 import os
 import sys
-from huggingface_hub import hf_hub_download
 from dotenv import load_dotenv
+from huggingface_hub import hf_hub_download
 
 load_dotenv()
 
 MODEL_HOME = os.getenv('MODEL_HOME')
-MODEL_FILE_LIST = os.getenv('MODEL_FILE_LIST', 'models.json')
+JSON_LIST = os.getenv('MODEL_FILE_LIST', 'models.json')
 
 if MODEL_HOME is None:
     print('Please set MODEL_HOME and re-run')
     sys.exit(1)
 
-def download_models(json_file_path):
+def download_models():
     """
     Reads a JSON file containing Hugging Face model IDs, descriptions, and files,
     checks if each model file is already downloaded, and if not, downloads it.
     """
     # Load model information from the provided JSON file
-    with open(MODEL_FILE_LIST, 'r') as f:
+    with open(JSON_LIST, 'r', encoding='utf8') as f:
         models = json.load(f).get('models', [])
 
     for model in models:
